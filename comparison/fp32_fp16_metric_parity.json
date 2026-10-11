@@ -1,0 +1,10 @@
+{
+  "prediction_agreement_rate": 1,
+  "prediction_differences": 0,
+  "accuracy_fp32": 0.9770114942528736,
+  "accuracy_fp16": 0.9770114942528736,
+  "accuracy_change": 0.0,
+  "macro_f1_fp32": 0.9584802193497846,
+  "macro_f1_fp16": 0.9584802193497846,
+  "macro_f1_change": 0.0
+}

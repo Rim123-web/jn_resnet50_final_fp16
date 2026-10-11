@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "policy": "Reuse the exact validated fixed-shape FP32 ONNX graph.",
+  "reference": {
+    "path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp32_640x640_batch1_warmup10_20260716_182655/onnx/resnet50_classification_fp32_1x3x640x640.onnx",
+    "size_bytes": 93974933,
+    "modified_time": 1784219809.4225135,
+    "sha256": "ff500e0a569014bb24e9661e0fc38abbfc20a3da0e9320138cc1050c6c863f82"
+  },
+  "packaged_copy": {
+    "path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/onnx/resnet50_classification_fp32_1x3x640x640.onnx",
+    "size_bytes": 93974933,
+    "modified_time": 1784219809.4225135,
+    "sha256": "ff500e0a569014bb24e9661e0fc38abbfc20a3da0e9320138cc1050c6c863f82"
+  },
+  "sha256_parity": true,
+  "reexport_performed": false
+}

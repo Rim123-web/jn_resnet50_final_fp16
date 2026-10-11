@@ -1,0 +1,200 @@
+{
+  "label": "official_measured_pass",
+  "requested_interval_seconds": 0.5,
+  "sample_count": 143,
+  "error": null,
+  "available_sensors": {
+    "stats_keys": [
+      "APE",
+      "APE_MASTER",
+      "CPU1",
+      "CPU2",
+      "CPU3",
+      "CPU4",
+      "EMC",
+      "Fan tegra_pwmfan0",
+      "GPU",
+      "IRAM",
+      "NVDEC",
+      "NVENC",
+      "NVJPG",
+      "Power POM_5V_CPU",
+      "Power POM_5V_GPU",
+      "Power TOT",
+      "RAM",
+      "SE",
+      "SWAP",
+      "Temp AO",
+      "Temp CPU",
+      "Temp GPU",
+      "Temp PLL",
+      "Temp thermal",
+      "VIC03",
+      "jetson_clocks",
+      "nvp model",
+      "time",
+      "uptime"
+    ],
+    "power": {
+      "rail": {
+        "POM_5V_CPU": {
+          "volt": 5288,
+          "curr": 296,
+          "power": 1565,
+          "warn": 32760,
+          "crit": 32760,
+          "online": true,
+          "avg": 1586
+        },
+        "POM_5V_GPU": {
+          "volt": 5288,
+          "curr": 40,
+          "power": 211,
+          "warn": 32760,
+          "crit": 32760,
+          "online": true,
+          "avg": 1396
+        }
+      },
+      "tot": {
+        "volt": 5296,
+        "curr": 760,
+        "power": 4024,
+        "warn": 32760,
+        "crit": 32760,
+        "online": true,
+        "avg": 5347,
+        "name": "POM_5V_IN"
+      }
+    },
+    "cpu": {
+      "total": {
+        "user": 8.608266970041715,
+        "nice": 0.0,
+        "system": 5.821008722032612,
+        "idle": 84.1296928327645
+      },
+      "cpu": [
+        {
+          "online": true,
+          "governor": "schedutil",
+          "freq": {
+            "min": 1200000,
+            "max": 1479000,
+            "cur": 1479000
+          },
+          "info_freq": {
+            "min": 102000,
+            "max": 1479000,
+            "cur": 1479000
+          },
+          "idle_state": {
+            "WFI": 0,
+            "c7": 0
+          },
+          "model": "ARMv8 Processor rev 1 (v8l)",
+          "user": 8.333333333333332,
+          "nice": 0.0,
+          "system": 25.0,
+          "idle": 64.58333333333334
+        },
+        {
+          "online": true,
+          "governor": "schedutil",
+          "freq": {
+            "min": 1200000,
+            "max": 1479000,
+            "cur": 1479000
+          },
+          "info_freq": {
+            "min": 102000,
+            "max": 1479000,
+            "cur": 1479000
+          },
+          "idle_state": {
+            "WFI": 0,
+            "c7": 0
+          },
+          "model": "ARMv8 Processor rev 1 (v8l)",
+          "user": 12.244897959183673,
+          "nice": 0.0,
+          "system": 12.244897959183673,
+          "idle": 75.51020408163265
+        },
+        {
+          "online": true,
+          "governor": "schedutil",
+          "freq": {
+            "min": 1200000,
+            "max": 1479000,
+            "cur": 1479000
+          },
+          "info_freq": {
+            "min": 102000,
+            "max": 1479000,
+            "cur": 1479000
+          },
+          "idle_state": {
+            "WFI": 0,
+            "c7": 0
+          },
+          "model": "ARMv8 Processor rev 1 (v8l)",
+          "user": 22.916666666666664,
+          "nice": 0.0,
+          "system": 12.5,
+          "idle": 64.58333333333334
+        },
+        {
+          "online": true,
+          "governor": "schedutil",
+          "freq": {
+            "min": 1200000,
+            "max": 1479000,
+            "cur": 1479000
+          },
+          "info_freq": {
+            "min": 102000,
+            "max": 1479000,
+            "cur": 1479000
+          },
+          "idle_state": {
+            "WFI": 0,
+            "c7": 0
+          },
+          "model": "ARMv8 Processor rev 1 (v8l)",
+          "user": 26.53061224489796,
+          "nice": 0.0,
+          "system": 20.408163265306122,
+          "idle": 53.06122448979592
+        }
+      ]
+    },
+    "gpu": "{'gpu': {'type': 'integrated', 'status': {'railgate': True, 'tpc_pg_mask': False, '3d_scaling': True, 'load': 0.0}, 'freq': {'governor': 'nvhost_podgov', 'cur': 921600, 'max': 921600, 'min': 76800}, 'power_control': 'auto'}}",
+    "memory": "{'RAM': {'tot': 4057956, 'used': 2341176, 'free': 415352, 'buffers': 27344, 'cached': 1332944, 'shared': 494356, 'lfb': 3}, 'SWAP': {'tot': 2028960, 'used': 1014380, 'cached': 4900, 'table': {'/dev/zram0': {'type': 'zram', 'prio': 5, 'size': 507240, 'used': 253620, 'boot': False}, '/dev/zram1': {'type': 'zram', 'prio': 5, 'size': 507240, 'used': 253620, 'boot': False}, '/dev/zram2': {'type': 'zram', 'prio': 5, 'size': 507240, 'used': 253592, 'boot': False}, '/dev/zram3': {'type': 'zram', 'prio': 5, 'size': 507240, 'used': 253548, 'boot': False}}}, 'EMC': {'cur': 1600000, 'override': 0, 'val': 0, 'online': True}, 'IRAM': {'tot': 252, 'used': 0, 'lfb': 252}}",
+    "temperature": {
+      "AO": {
+        "temp": 60.5,
+        "online": true
+      },
+      "CPU": {
+        "temp": 53.0,
+        "online": true
+      },
+      "GPU": {
+        "temp": 50.5,
+        "online": true
+      },
+      "PLL": {
+        "temp": 50.0,
+        "online": true
+      },
+      "thermal": {
+        "temp": 52.25,
+        "online": true
+      }
+    },
+    "fan": "{'tegra_pwmfan': {'speed': [31.372549019607842], 'rpm': [0], 'profile': 'temp_control'}}"
+  },
+  "method": "jtop/jetson-stats plus psutil",
+  "power_boundary": "Jetson module-level Power TOT (POM_5V_IN)"
+}

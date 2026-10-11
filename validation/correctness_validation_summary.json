@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "sample_count": 20,
+  "sampling": "20 evenly spaced deterministic indices over the sorted 261-image list",
+  "source_onnx_reference_status": "PASS",
+  "source_model_sha256_parity": true,
+  "source_onnx_fp16_top1_agreement": true,
+  "fp32_fp16_top1_agreement": true,
+  "fp32_fp16_prediction_agreement_rate": 1.0,
+  "max_fp32_fp16_abs_error": 0.2440624237060547,
+  "mean_fp32_fp16_abs_error": 0.040916606411337854,
+  "minimum_fp32_fp16_cosine_similarity": 0.9999549333111452,
+  "cosine_similarity_acceptance": 0.999,
+  "duration_seconds": 28.812340021133423,
+  "validation_process_releases_context_on_exit": true,
+  "current_source_runtime_note": "A direct source-model rerun was attempted but repeated Jetson CPU PyTorch inference produced NaNs after several samples. The exact source checkpoint hash and exact ONNX hash match the validated FP32 package, whose preserved 20-image source/ONNX/TensorRT validation is PASS. Current FP32 and FP16 TensorRT outputs were freshly evaluated sequentially."
+}

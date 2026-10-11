@@ -1,0 +1,6 @@
+property,value,source_file,line
+decoder,PIL.Image.open followed by load/convert,/home/jetson/Downloads/classification_jetson/resnet50_fp32_core4_benchmark/scripts/run_resnet50_fp32_core4_benchmark.py,194
+color_order,RGB,/home/jetson/Downloads/classification_jetson/resnet50_fp32_core4_benchmark/scripts/run_resnet50_fp32_core4_benchmark.py,194
+resize,direct 640x640 PIL bilinear; no crop or aspect preservation,/home/jetson/Downloads/classification_jetson/resnet50_fp32_core4_benchmark/scripts/run_resnet50_fp32_core4_benchmark.py,194
+normalization,"mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]",/home/jetson/Downloads/classification_jetson/preprocessing.json,4-5
+layout_dtype,"HWC-to-CHW, contiguous FP32, batch dimension",/home/jetson/Downloads/classification_jetson/resnet50_fp32_core4_benchmark/scripts/run_resnet50_fp32_core4_benchmark.py,195-198

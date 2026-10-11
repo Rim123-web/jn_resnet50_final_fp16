@@ -1,0 +1,11 @@
+{
+  "hostname": "nano",
+  "architecture": "aarch64",
+  "kernel": "4.9.253-tegra",
+  "date_iso": "2026-07-16T20:47:14+0200",
+  "memory": "              total        used        free      shared  buff/cache   available\nMem:          3,9Gi       1,5Gi       634Mi        11Mi       1,7Gi       2,7Gi\nSwap:         1,9Gi       986Mi       995Mi\n",
+  "swap": "NAME       TYPE        SIZE   USED PRIO\n/dev/zram0 partition 495,4M 246,5M    5\n/dev/zram1 partition 495,4M 246,6M    5\n/dev/zram2 partition 495,4M 246,6M    5\n/dev/zram3 partition 495,4M 246,5M    5\n",
+  "storage": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/mmcblk0p1  116G   35G   77G  31% /\n",
+  "nvpmodel": "NVPM WARN: fan mode is not set!\nNV Power Mode: MAXN\n0\nNVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13\nNVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap\n",
+  "processes": "  80206   80202       2  0.0  0.0 bash -c set -euo pipefail RUN=/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533 PY=/home/jetson/Downloads/jetson_nano/.venv_yolo/bin/python PYTHONNOUSERSITE=1 \"$PY\" \"$RUN/scripts/postrun_audit.py\" 2>&1 | tee \"$RUN/logs/postrun_audit.log\" PYTHONNOUSERSITE=1 \"$PY\" \"$RUN/scripts/record_execution_provenance.py\" 2>&1 | tee \"$RUN/logs/execution_provenance.log\" PYTHONNOUSERSITE=1 \"$PY\" \"$RUN/scripts/refresh_hash_manifest.py\" >/dev/null PYTHONNOUSERSITE=1 \"$PY\" \"$RUN/scripts/validate_result_package.py\" 2>&1 | tee \"$RUN/logs/package_validation.log\" python3 -m json.tool \"$RUN/validation/original_artifact_integrity.json\"\n  80207   80206       2 61.0  0.7 /home/jetson/Downloads/jetson_nano/.venv_yolo/bin/python /home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/scripts/postrun_audit.py\n  80208   80206       2  0.0  0.0 tee /home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/logs/postrun_audit.log\n"
+}

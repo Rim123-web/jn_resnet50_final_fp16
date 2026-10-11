@@ -1,0 +1,2 @@
+model,precision,images,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1,engine_latency_mean_ms,end_to_end_latency_mean_ms,engine_fps,transfer_inclusive_fps,pipeline_fps,wall_clock_fps,avg_power_tot_w,gross_energy_per_image_j,idle_corrected_energy_per_image_j
+ResNet50,TensorRT FP16-enabled execution,261,0.9770114942528736,0.955108359133127,0.9624338624338624,0.9584802193497846,0.9771555663609637,187.14831852821555,273.36316818390804,5.343355515370202,5.264639182966992,3.658137292757886,3.652760740085841,7.59872027972028,2.087188965526121,1.2982878890585627

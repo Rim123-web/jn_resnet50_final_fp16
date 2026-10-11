@@ -1,0 +1,202 @@
+[
+  {
+    "index": 0,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_1_asymptomatic/DJI_20240525115549_0011_RGB_10.JPG",
+    "logits": [
+      8.633774757385254,
+      -9.045096397399902,
+      -3.553131103515625
+    ],
+    "top1": 0
+  },
+  {
+    "index": 14,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_1_asymptomatic/DJI_20240525115826_0060_RGB_2.JPG",
+    "logits": [
+      7.800292015075684,
+      -8.274955749511719,
+      -3.4523792266845703
+    ],
+    "top1": 0
+  },
+  {
+    "index": 27,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_1_asymptomatic/DJI_20240525121114_0006_RGB_15.JPG",
+    "logits": [
+      12.301844596862793,
+      -7.943411350250244,
+      -9.904507637023926
+    ],
+    "top1": 0
+  },
+  {
+    "index": 41,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_1_asymptomatic/DJI_20240525121400_0054_RGB_10.JPG",
+    "logits": [
+      13.150464057922363,
+      -15.166324615478516,
+      -4.023044109344482
+    ],
+    "top1": 0
+  },
+  {
+    "index": 55,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_1_asymptomatic/DJI_20240525122759_0006_RGB_3.JPG",
+    "logits": [
+      11.352518081665039,
+      -9.231159210205078,
+      -6.978845596313477
+    ],
+    "top1": 0
+  },
+  {
+    "index": 68,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_1_asymptomatic/DJI_20240525123007_0070_RGB_2.JPG",
+    "logits": [
+      6.473485946655273,
+      -6.556751728057861,
+      -2.9577200412750244
+    ],
+    "top1": 0
+  },
+  {
+    "index": 82,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_1_asymptomatic/DJI_20240525175912_0243_RGB_0.JPG",
+    "logits": [
+      12.200265884399414,
+      -12.133687019348145,
+      -5.753229141235352
+    ],
+    "top1": 0
+  },
+  {
+    "index": 96,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_1_asymptomatic/DJI_20240525190105_0016_RGB_1.JPG",
+    "logits": [
+      12.357007026672363,
+      -7.944432258605957,
+      -14.295509338378906
+    ],
+    "top1": 0
+  },
+  {
+    "index": 109,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_1_asymptomatic/DJI_20240525190205_0046_RGB_0.JPG",
+    "logits": [
+      12.193218231201172,
+      -11.151728630065918,
+      -9.371121406555176
+    ],
+    "top1": 0
+  },
+  {
+    "index": 123,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_1_asymptomatic/DJI_20240525190311_0079_RGB_1.JPG",
+    "logits": [
+      9.362489700317383,
+      -7.8112287521362305,
+      -9.095342636108398
+    ],
+    "top1": 0
+  },
+  {
+    "index": 137,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_1_asymptomatic/DJI_20240525190453_0130_RGB_2.JPG",
+    "logits": [
+      15.390193939208984,
+      -11.97469425201416,
+      -15.6066312789917
+    ],
+    "top1": 0
+  },
+  {
+    "index": 151,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_1_asymptomatic/DJI_20240525190703_0195_RGB_1.JPG",
+    "logits": [
+      13.329038619995117,
+      -6.805050849914551,
+      -16.1392879486084
+    ],
+    "top1": 0
+  },
+  {
+    "index": 164,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_2_mild_symptoms/DJI_20240525121407_0056_RGB_8.JPG",
+    "logits": [
+      -4.285402297973633,
+      3.3073153495788574,
+      -2.5317482948303223
+    ],
+    "top1": 1
+  },
+  {
+    "index": 178,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_2_mild_symptoms/DJI_20240525122819_0016_RGB_1.JPG",
+    "logits": [
+      -8.942288398742676,
+      8.478910446166992,
+      -5.062654972076416
+    ],
+    "top1": 1
+  },
+  {
+    "index": 192,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_2_mild_symptoms/DJI_20240525125515_0472_RGB_1.JPG",
+    "logits": [
+      -7.64302921295166,
+      5.271186828613281,
+      -2.3736748695373535
+    ],
+    "top1": 1
+  },
+  {
+    "index": 205,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_2_mild_symptoms/DJI_20240525190435_0121_RGB_2.JPG",
+    "logits": [
+      -1.2610764503479004,
+      13.844517707824707,
+      -29.498144149780273
+    ],
+    "top1": 1
+  },
+  {
+    "index": 219,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_2_mild_symptoms/DJI_20240525190657_0192_RGB_0.JPG",
+    "logits": [
+      0.21128040552139282,
+      15.108362197875977,
+      -32.08774185180664
+    ],
+    "top1": 1
+  },
+  {
+    "index": 233,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_3_symptomatic_compromised/DJI_20240525124105_0047_RGB_0.JPG",
+    "logits": [
+      -5.354315757751465,
+      -9.19948959350586,
+      9.964702606201172
+    ],
+    "top1": 2
+  },
+  {
+    "index": 246,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_3_symptomatic_compromised/DJI_20240525125207_0378_RGB_0.JPG",
+    "logits": [
+      -9.545401573181152,
+      -8.585511207580566,
+      12.258994102478027
+    ],
+    "top1": 2
+  },
+  {
+    "index": 260,
+    "path": "/home/jetson/Downloads/classification_jetson/test_imgs/class_3_symptomatic_compromised/DJI_20240525130722_0135_RGB_0.JPG",
+    "logits": [
+      -8.926841735839844,
+      -13.247575759887695,
+      15.558815002441406
+    ],
+    "top1": 2
+  }
+]

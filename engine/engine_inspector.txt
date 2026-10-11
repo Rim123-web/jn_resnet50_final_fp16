@@ -1,0 +1,34 @@
+[
+  {
+    "index": 0,
+    "name": "input",
+    "is_input": true,
+    "engine_shape": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "runtime_shape": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "dtype": "DataType.FLOAT"
+  },
+  {
+    "index": 1,
+    "name": "logits",
+    "is_input": false,
+    "engine_shape": [
+      1,
+      3
+    ],
+    "runtime_shape": [
+      1,
+      3
+    ],
+    "dtype": "DataType.FLOAT"
+  }
+]

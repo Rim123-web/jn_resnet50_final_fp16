@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "checks": {
+    "source_model_sha256": true,
+    "onnx_sha256": true,
+    "dataset_inventory_sha256": true,
+    "image_order_sha256": true,
+    "class_mapping_sha256": true,
+    "preprocessing_sha256": true,
+    "batch_size": true,
+    "input_shape": true,
+    "warmup_count": true,
+    "measured_image_count": true,
+    "monitor_interval": true,
+    "timing_script_template": true
+  },
+  "experimental_variable": "TensorRT execution precision"
+}

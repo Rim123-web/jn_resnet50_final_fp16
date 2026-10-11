@@ -1,0 +1,116 @@
+{
+  "recorded_at": "2026-07-16T20:47:15+0200",
+  "steps": [
+    {
+      "stage": "prepare",
+      "command": "PYTHONNOUSERSITE=1 .../python scripts/prepare_project.py",
+      "purpose": "prepare",
+      "log_path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/logs/preparation.log",
+      "log_exists": true,
+      "log_modified_epoch": 1784225897.4050734,
+      "exit_status": 0,
+      "status": "PASS"
+    },
+    {
+      "stage": "inspect_onnx",
+      "command": "PYTHONNOUSERSITE=1 .../python scripts/inspect_onnx.py",
+      "purpose": "inspect onnx",
+      "log_path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/logs/inspect_onnx.log",
+      "log_exists": true,
+      "log_modified_epoch": 1784225913.7973332,
+      "exit_status": 0,
+      "status": "PASS"
+    },
+    {
+      "stage": "validate_onnx",
+      "command": "jetson_benchmark_env/bin/python scripts/validate_onnx.py",
+      "purpose": "validate onnx",
+      "log_path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/logs/validate_onnx.log",
+      "log_exists": true,
+      "log_modified_epoch": 1784225921.2054513,
+      "exit_status": 0,
+      "status": "PASS"
+    },
+    {
+      "stage": "validate_onnx_dataset",
+      "command": "jetson_benchmark_env/bin/python scripts/validate_onnx_dataset.py",
+      "purpose": "validate onnx dataset",
+      "log_path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/logs/validate_onnx_dataset.log",
+      "log_exists": true,
+      "log_modified_epoch": 1784225988.6345348,
+      "exit_status": 0,
+      "status": "PASS"
+    },
+    {
+      "stage": "build_engine",
+      "command": "bash scripts/build_engine.sh",
+      "purpose": "build engine",
+      "log_path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/logs/build_engine_runner.log",
+      "log_exists": true,
+      "log_modified_epoch": 1784226299.755739,
+      "exit_status": 0,
+      "status": "PASS"
+    },
+    {
+      "stage": "correctness_validation",
+      "command": "PYTHONNOUSERSITE=1 .../python scripts/validate_correctness.py",
+      "purpose": "correctness validation",
+      "log_path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/logs/correctness_validation.log",
+      "log_exists": true,
+      "log_modified_epoch": 1784227303.4886305,
+      "exit_status": 0,
+      "status": "PASS"
+    },
+    {
+      "stage": "idle_capture",
+      "command": "PYTHONNOUSERSITE=1 .../python scripts/run_idle_monitor.py",
+      "purpose": "idle capture",
+      "log_path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/logs/idle_capture.log",
+      "log_exists": true,
+      "log_modified_epoch": 1784227376.870819,
+      "exit_status": 0,
+      "status": "PASS"
+    },
+    {
+      "stage": "official_benchmark",
+      "command": "PYTHONNOUSERSITE=1 .../python scripts/benchmark_resnet50_fp16_warmup10.py",
+      "purpose": "official benchmark",
+      "log_path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/logs/official_benchmark.log",
+      "log_exists": true,
+      "log_modified_epoch": 1784227471.217496,
+      "exit_status": 0,
+      "status": "PASS"
+    },
+    {
+      "stage": "finalize",
+      "command": "PYTHONNOUSERSITE=1 .../python scripts/finalize_results.py",
+      "purpose": "finalize",
+      "log_path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/logs/finalize_results.log",
+      "log_exists": true,
+      "log_modified_epoch": 1784227549.0756059,
+      "exit_status": 0,
+      "status": "PASS"
+    },
+    {
+      "stage": "postrun_audit",
+      "command": "PYTHONNOUSERSITE=1 .../python scripts/postrun_audit.py",
+      "purpose": "postrun audit",
+      "log_path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/logs/postrun_audit.log",
+      "log_exists": true,
+      "log_modified_epoch": 1784227634.6298375,
+      "exit_status": 0,
+      "status": "PASS"
+    },
+    {
+      "stage": "package_validation",
+      "command": "PYTHONNOUSERSITE=1 .../python scripts/validate_result_package.py",
+      "purpose": "package validation",
+      "log_path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/logs/package_validation.log",
+      "log_exists": true,
+      "log_modified_epoch": 1784227583.5165145,
+      "exit_status": 0,
+      "status": "PASS"
+    }
+  ],
+  "note": "Commands are normalized for publication; full engine command is preserved verbatim in engine/engine_build_log.txt."
+}

@@ -1,0 +1,46 @@
+{
+  "path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp32_640x640_batch1_warmup10_20260716_182655",
+  "final_validation_status": "PASS",
+  "run_manifest": {
+    "run_directory": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp32_640x640_batch1_warmup10_20260716_182655",
+    "task": "classification",
+    "model": "ResNet50",
+    "precision": "TensorRT FP32 strict",
+    "tf32_disabled": true,
+    "fp16_disabled": true,
+    "int8_disabled": true,
+    "batch_size": 1,
+    "input_shape": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "warmup_count": 10,
+    "dataset_source": "/home/jetson/Downloads/classification_jetson/test_imgs",
+    "source_model": "/home/jetson/Downloads/classification_jetson/resnet50_inference_models/resnet50_inference_only.pt",
+    "source_onnx": "/home/jetson/Downloads/classification_jetson/resnet50_inference_models/resnet50_inference.onnx",
+    "created_at": "2026-07-16T18:35:36+0200",
+    "status": "PASS",
+    "completed_at": "2026-07-16T18:50:12+0200",
+    "measured_images": 261,
+    "accuracy": 0.9770114942528736,
+    "macro_f1": 0.9584802193497846,
+    "engine_fps": 2.87308789194496,
+    "wall_clock_pipeline_fps": 2.2893062812792393,
+    "gross_energy_per_image_j": 3.7512007954175437,
+    "final_validation": "PASS"
+  },
+  "source_model": {
+    "path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp32_640x640_batch1_warmup10_20260716_182655/model/resnet50_inference_only.pt",
+    "size_bytes": 94375903,
+    "modified_time": 1781289670.3360872,
+    "sha256": "ade1ca2964c273bce81b6a82a8446b81b9be8954f2bd6a54d563c57c11bbc61a"
+  },
+  "onnx": {
+    "path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp32_640x640_batch1_warmup10_20260716_182655/onnx/resnet50_classification_fp32_1x3x640x640.onnx",
+    "size_bytes": 93974933,
+    "modified_time": 1784219809.4225135,
+    "sha256": "ff500e0a569014bb24e9661e0fc38abbfc20a3da0e9320138cc1050c6c863f82"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "architecture": "ResNet50",
+  "task": "classification",
+  "class_count": 3,
+  "class_names": [
+    "class_1_asymptomatic",
+    "class_2_mild_symptoms",
+    "class_3_symptomatic_compromised"
+  ],
+  "input_shape": [
+    1,
+    3,
+    640,
+    640
+  ],
+  "input_dtype": "float32",
+  "checkpoint_keys": [
+    "class_names",
+    "dropout",
+    "img_size",
+    "model_name",
+    "model_state_dict",
+    "preprocessing"
+  ],
+  "checkpoint_model_name": "ResNet50",
+  "checkpoint_img_size": 640,
+  "checkpoint_dropout": 0.0,
+  "parameter_count": 23514179,
+  "selected_source": {
+    "path": "/home/jetson/Downloads/classification_jetson/resnet50_inference_models/resnet50_inference_only.pt",
+    "size_bytes": 94375903,
+    "modified_time": 1781289670.3360872,
+    "sha256": "ade1ca2964c273bce81b6a82a8446b81b9be8954f2bd6a54d563c57c11bbc61a"
+  },
+  "packaged_copy": {
+    "path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/model/resnet50_inference_only.pt",
+    "size_bytes": 94375903,
+    "modified_time": 1781289670.3360872,
+    "sha256": "ade1ca2964c273bce81b6a82a8446b81b9be8954f2bd6a54d563c57c11bbc61a"
+  },
+  "copy_hash_matches": true,
+  "fp32_reference_source_model_sha256": "ade1ca2964c273bce81b6a82a8446b81b9be8954f2bd6a54d563c57c11bbc61a",
+  "source_model_hash_matches_fp32": true,
+  "reused_fp32_onnx": {
+    "path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp32_640x640_batch1_warmup10_20260716_182655/onnx/resnet50_classification_fp32_1x3x640x640.onnx",
+    "size_bytes": 93974933,
+    "modified_time": 1784219809.4225135,
+    "sha256": "ff500e0a569014bb24e9661e0fc38abbfc20a3da0e9320138cc1050c6c863f82"
+  },
+  "packaged_onnx": {
+    "path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/onnx/resnet50_classification_fp32_1x3x640x640.onnx",
+    "size_bytes": 93974933,
+    "modified_time": 1784219809.4225135,
+    "sha256": "ff500e0a569014bb24e9661e0fc38abbfc20a3da0e9320138cc1050c6c863f82"
+  },
+  "onnx_hash_matches_fp32": true
+}

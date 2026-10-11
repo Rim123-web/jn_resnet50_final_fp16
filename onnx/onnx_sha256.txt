@@ -1,0 +1,1 @@
+ff500e0a569014bb24e9661e0fc38abbfc20a3da0e9320138cc1050c6c863f82  resnet50_classification_fp32_1x3x640x640.onnx

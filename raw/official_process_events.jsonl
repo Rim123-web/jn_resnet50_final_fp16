@@ -1,0 +1,15 @@
+{"event": "official_process_started", "timestamp_epoch": 1784227391.1957476, "monotonic_seconds": 16805.397846036}
+{"event": "engine_loaded", "timestamp_epoch": 1784227396.5624652, "monotonic_seconds": 16810.76456736, "bindings": [{"index": 0, "name": "input", "is_input": true, "engine_shape": [1, 3, 640, 640], "runtime_shape": [1, 3, 640, 640], "dtype": "DataType.FLOAT"}, {"index": 1, "name": "logits", "is_input": false, "engine_shape": [1, 3], "runtime_shape": [1, 3], "dtype": "DataType.FLOAT"}]}
+{"event": "warmup_completed", "timestamp_epoch": 1784227396.930543, "monotonic_seconds": 16811.132636194, "warmup_index": 1}
+{"event": "warmup_completed", "timestamp_epoch": 1784227397.1193438, "monotonic_seconds": 16811.321436892, "warmup_index": 2}
+{"event": "warmup_completed", "timestamp_epoch": 1784227397.3092, "monotonic_seconds": 16811.511293505, "warmup_index": 3}
+{"event": "warmup_completed", "timestamp_epoch": 1784227397.500885, "monotonic_seconds": 16811.702978348, "warmup_index": 4}
+{"event": "warmup_completed", "timestamp_epoch": 1784227397.6888096, "monotonic_seconds": 16811.890903186, "warmup_index": 5}
+{"event": "warmup_completed", "timestamp_epoch": 1784227397.88104, "monotonic_seconds": 16812.083133357, "warmup_index": 6}
+{"event": "warmup_completed", "timestamp_epoch": 1784227398.069733, "monotonic_seconds": 16812.271825873, "warmup_index": 7}
+{"event": "warmup_completed", "timestamp_epoch": 1784227398.258495, "monotonic_seconds": 16812.460588388, "warmup_index": 8}
+{"event": "warmup_completed", "timestamp_epoch": 1784227398.4501297, "monotonic_seconds": 16812.652223383, "warmup_index": 9}
+{"event": "warmup_completed", "timestamp_epoch": 1784227398.638678, "monotonic_seconds": 16812.840770996, "warmup_index": 10}
+{"event": "official_measured_window_started", "timestamp_epoch": 1784227399.2950895, "monotonic_seconds": 16813.497181549, "expected_images": 261}
+{"event": "official_measured_window_ended", "timestamp_epoch": 1784227470.7478797, "monotonic_seconds": 16884.949971726, "measured_images": 261}
+{"event": "official_process_completed", "timestamp_epoch": 1784227471.2002544, "monotonic_seconds": 16885.402349336, "provenance": {"warmup_executions": 10, "warmup_policy": "first deterministic image preprocessed once, then engine executed exactly 10 times", "warmups_excluded_from_timing": true, "warmups_excluded_from_monitoring": true, "measured_executions": 261, "expected_measured_executions": 261, "total_engine_executions": 271, "discarded_measured_rows": 0, "failed_images": 0, "official_start_epoch": 1784227399.295052, "official_end_epoch": 1784227470.747862, "official_measured_wall_time_seconds": 71.45280476100015, "first_cold_engine_execution_included": false, "first_dataset_image_included_in_measured_pass": true, "monitor_sample_count": 143}}

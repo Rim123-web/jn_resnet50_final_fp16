@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "onnx_version": "1.17.0",
+  "onnxruntime_version": "1.19.2",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "opset": [
+    13
+  ],
+  "inputs": [
+    {
+      "name": "input",
+      "shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "elem_type": 1
+    }
+  ],
+  "outputs": [
+    {
+      "name": "logits",
+      "shape": [
+        1,
+        3
+      ],
+      "elem_type": 1
+    }
+  ],
+  "node_count": 122,
+  "dummy_output_shape": [
+    1,
+    3
+  ],
+  "dynamic_shapes": false,
+  "embedded_preprocessing": false
+}

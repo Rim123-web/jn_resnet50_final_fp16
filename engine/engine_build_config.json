@@ -1,0 +1,17 @@
+{
+  "builder": "/usr/src/tensorrt/bin/trtexec",
+  "source_onnx": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/onnx/resnet50_classification_fp32_1x3x640x640.onnx",
+  "output_engine": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/engine/resnet50_classification_tensorrt_fp16_1x3x640x640.engine",
+  "workspace_mb": 1024,
+  "input_shape": [1, 3, 640, 640],
+  "batch_size": 1,
+  "fp16": true,
+  "int8": false,
+  "tf32": false,
+  "dla": false,
+  "dynamic_shapes": false,
+  "input_io_format": "fp32:chw",
+  "output_io_format": "fp32:chw",
+  "build_only": true,
+  "timing_cache": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/engine/timing_cache.bin"
+}

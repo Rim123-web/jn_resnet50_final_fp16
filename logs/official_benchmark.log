@@ -1,0 +1,18 @@
+OFFICIAL BENCHMARK PASS
+{
+  "warmup_executions": 10,
+  "warmup_policy": "first deterministic image preprocessed once, then engine executed exactly 10 times",
+  "warmups_excluded_from_timing": true,
+  "warmups_excluded_from_monitoring": true,
+  "measured_executions": 261,
+  "expected_measured_executions": 261,
+  "total_engine_executions": 271,
+  "discarded_measured_rows": 0,
+  "failed_images": 0,
+  "official_start_epoch": 1784227399.295052,
+  "official_end_epoch": 1784227470.747862,
+  "official_measured_wall_time_seconds": 71.45280476100015,
+  "first_cold_engine_execution_included": false,
+  "first_dataset_image_included_in_measured_pass": true,
+  "monitor_sample_count": 143
+}

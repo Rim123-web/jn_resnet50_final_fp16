@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "critical_checks": {
+    "hostname": true,
+    "architecture": true,
+    "device_model": true,
+    "kernel": true,
+    "l4t": true,
+    "cpu_online": true,
+    "cpu_governors": true,
+    "nvpmodel": true
+  },
+  "current": {
+    "hostname": "nano",
+    "username": "jetson",
+    "date_iso": "2026-07-16T20:17:26+0200",
+    "architecture": "aarch64",
+    "platform": "Linux-4.9.253-tegra-aarch64-with-glibc2.29",
+    "python_executable": "/home/jetson/Downloads/jetson_nano/.venv_yolo/bin/python",
+    "python_version": "3.8.10 (default, Mar 18 2025, 20:04:55) \n[GCC 9.4.0]",
+    "device_model": "NVIDIA Jetson Nano Developer Kit",
+    "l4t": "# R32 (release), REVISION: 6.1, GCID: 27863751, BOARD: t210ref, EABI: aarch64, DATE: Mon Jul 26 19:20:30 UTC 2021",
+    "os_release": "NAME=\"Ubuntu\"\nVERSION=\"20.04.6 LTS (Focal Fossa)\"\nID=ubuntu\nID_LIKE=debian\nPRETTY_NAME=\"Ubuntu 20.04.6 LTS\"\nVERSION_ID=\"20.04\"\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nVERSION_CODENAME=focal\nUBUNTU_CODENAME=focal\n",
+    "kernel": "4.9.253-tegra",
+    "cpu_online": "0-3",
+    "cpu_governors": [
+      "schedutil",
+      "schedutil",
+      "schedutil",
+      "schedutil"
+    ],
+    "nvpmodel": "NVPM WARN: fan mode is not set!\nNV Power Mode: MAXN\n0\nNVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13\nNVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap\n",
+    "jetson_clocks": "OFF (verified from jtop preflight; direct --show requires root)",
+    "memory": "              total        used        free      shared  buff/cache   available\nMem:          3,9Gi       1,7Gi       274Mi        11Mi       1,9Gi       2,4Gi\nSwap:         1,9Gi       910Mi       1,0Gi\n",
+    "swap": "NAME       TYPE        SIZE   USED PRIO\n/dev/zram0 partition 495,4M 227,8M    5\n/dev/zram1 partition 495,4M   228M    5\n/dev/zram2 partition 495,4M 227,6M    5\n/dev/zram3 partition 495,4M 227,6M    5\n",
+    "storage": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/mmcblk0p1  116G   34G   77G  31% /\n",
+    "processes": "  68851   68847       0  0.0  0.0 bash -c set -euo pipefail RUN=/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533 PY=/home/jetson/Downloads/jetson_nano/.venv_yolo/bin/python PYTHONNOUSERSITE=1 \"$PY\" -m py_compile \"$RUN\"/scripts/*.py 2>&1 | tee \"$RUN/logs/pre_execution_syntax_check.log\" PYTHONNOUSERSITE=1 \"$PY\" \"$RUN/scripts/prepare_project.py\" 2>&1 | tee \"$RUN/logs/preparation.log\"\n  68859   68851       0  0.0  0.7 /home/jetson/Downloads/jetson_nano/.venv_yolo/bin/python /home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/scripts/prepare_project.py\n  68860   68851       0  0.0  0.0 tee /home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/logs/preparation.log\n",
+    "thermal": "/sys/class/thermal/thermal_zone0|AO-therm|47500\n/sys/class/thermal/thermal_zone1|CPU-therm|40000\n/sys/class/thermal/thermal_zone2|GPU-therm|37500\n/sys/class/thermal/thermal_zone3|PLL-therm|37000\n/sys/class/thermal/thermal_zone4|PMIC-Die|50000\n/sys/class/thermal/thermal_zone5|thermal-fan-est|38750\n",
+    "cuda_nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2021 NVIDIA Corporation\nBuilt on Sun_Feb_28_22:34:44_PST_2021\nCuda compilation tools, release 10.2, V10.2.300\nBuild cuda_10.2_r440.TC440_70.29663091_0\n",
+    "tensorrt_packages": "libnvinfer8|8.0.1-1+cuda10.2\nlibnvinfer8-cross-aarch64|\nlibnvinfer-bin|8.0.1-1+cuda10.2\nlibnvinfer-dev|8.0.1-1+cuda10.2\nlibnvinfer-dev-cross-aarch64|\nlibnvinfer-doc|8.0.1-1+cuda10.2\nlibnvinfer-plugin8|8.0.1-1+cuda10.2\nlibnvinfer-plugin-dev|8.0.1-1+cuda10.2\nlibnvinfer-plugin-dev-cross-aarch64|\nlibnvinfer-samples|8.0.1-1+cuda10.2\n"
+  },
+  "fp32_reference": {
+    "hostname": "nano",
+    "username": "jetson",
+    "date_iso": "2026-07-16T18:35:02+0200",
+    "architecture": "aarch64",
+    "platform": "Linux-4.9.253-tegra-aarch64-with-glibc2.29",
+    "python_executable": "/home/jetson/Downloads/jetson_nano/.venv_yolo/bin/python",
+    "python_version": "3.8.10 (default, Mar 18 2025, 20:04:55) \n[GCC 9.4.0]",
+    "device_model": "NVIDIA Jetson Nano Developer Kit",
+    "l4t": "# R32 (release), REVISION: 6.1, GCID: 27863751, BOARD: t210ref, EABI: aarch64, DATE: Mon Jul 26 19:20:30 UTC 2021",
+    "os_release": "NAME=\"Ubuntu\"\nVERSION=\"20.04.6 LTS (Focal Fossa)\"\nID=ubuntu\nID_LIKE=debian\nPRETTY_NAME=\"Ubuntu 20.04.6 LTS\"\nVERSION_ID=\"20.04\"\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nVERSION_CODENAME=focal\nUBUNTU_CODENAME=focal\n",
+    "kernel": "4.9.253-tegra",
+    "cpu_online": "0-3",
+    "cpu_governors": [
+      "schedutil",
+      "schedutil",
+      "schedutil",
+      "schedutil"
+    ],
+    "nvpmodel": "NVPM WARN: fan mode is not set!\nNV Power Mode: MAXN\n0\nNVPM ERROR: Error opening /sys/kernel/nvpmodel_emc_cap/emc_iso_cap: 13\nNVPM ERROR: failed to read PARAM EMC: ARG MAX_FREQ: PATH /sys/kernel/nvpmodel_emc_cap/emc_iso_cap\n",
+    "jetson_clocks": "OFF (verified from jtop preflight; direct --show requires root)",
+    "memory": "              total        used        free      shared  buff/cache   available\nMem:          3,9Gi       1,9Gi       372Mi        20Mi       1,6Gi       1,9Gi\nSwap:         1,9Gi       284Mi       1,7Gi\n",
+    "swap": "NAME       TYPE        SIZE  USED PRIO\n/dev/zram0 partition 495,4M 71,5M    5\n/dev/zram1 partition 495,4M 71,2M    5\n/dev/zram2 partition 495,4M 71,2M    5\n/dev/zram3 partition 495,4M 70,9M    5\n",
+    "storage": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/mmcblk0p1  116G   34G   78G  31% /\n",
+    "processes": "  19376   19372       1  0.0  0.0 bash -c set -e; cd '/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp32_640x640_batch1_warmup10_20260716_182655'; PYTHONNOUSERSITE=1 /home/jetson/Downloads/jetson_nano/.venv_yolo/bin/python scripts/prepare_project.py 2>&1 | tee logs/prepare_project.log\n",
+    "thermal": "/sys/class/thermal/thermal_zone0|AO-therm|47000\n/sys/class/thermal/thermal_zone1|CPU-therm|39500\n/sys/class/thermal/thermal_zone2|GPU-therm|39000\n/sys/class/thermal/thermal_zone3|PLL-therm|37000\n/sys/class/thermal/thermal_zone4|PMIC-Die|50000\n/sys/class/thermal/thermal_zone5|thermal-fan-est|39500\n",
+    "cuda_nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2021 NVIDIA Corporation\nBuilt on Sun_Feb_28_22:34:44_PST_2021\nCuda compilation tools, release 10.2, V10.2.300\nBuild cuda_10.2_r440.TC440_70.29663091_0\n",
+    "tensorrt_packages": "libnvinfer8|8.0.1-1+cuda10.2\nlibnvinfer8-cross-aarch64|\nlibnvinfer-bin|8.0.1-1+cuda10.2\nlibnvinfer-dev|8.0.1-1+cuda10.2\nlibnvinfer-dev-cross-aarch64|\nlibnvinfer-doc|8.0.1-1+cuda10.2\nlibnvinfer-plugin8|8.0.1-1+cuda10.2\nlibnvinfer-plugin-dev|8.0.1-1+cuda10.2\nlibnvinfer-plugin-dev-cross-aarch64|\nlibnvinfer-samples|8.0.1-1+cuda10.2\n"
+  },
+  "notes": {
+    "memory": "Snapshot values are recorded but intentionally not equality-gated.",
+    "swap": "Snapshot values are recorded but intentionally not equality-gated.",
+    "temperature": "Thermal snapshots are expected to vary between runs.",
+    "jetson_clocks": "Both packages use the same recorded OFF policy."
+  }
+}

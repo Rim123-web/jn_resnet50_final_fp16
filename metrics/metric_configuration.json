@@ -1,0 +1,11 @@
+{
+  "class_order": [
+    "class_1_asymptomatic",
+    "class_2_mild_symptoms",
+    "class_3_symptomatic_compromised"
+  ],
+  "zero_division": 0.0,
+  "top1": true,
+  "top5": "NA because only three classes exist",
+  "input_rows": 261
+}

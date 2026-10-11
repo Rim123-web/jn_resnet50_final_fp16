@@ -1,0 +1,275 @@
+FINALIZATION PASS
+{
+  "architecture": "ResNet50",
+  "task": "classification",
+  "device": "NVIDIA Jetson Nano Developer Kit",
+  "precision": "TensorRT FP16-enabled execution",
+  "input_shape": [
+    1,
+    3,
+    640,
+    640
+  ],
+  "batch_size": 1,
+  "warmup_count": 10,
+  "measured_images": 261,
+  "metrics": {
+    "task": "classification",
+    "total_images": 261,
+    "correct": 255,
+    "incorrect": 6,
+    "accuracy": 0.9770114942528736,
+    "top5_accuracy": null,
+    "macro_precision": 0.955108359133127,
+    "macro_recall": 0.9624338624338624,
+    "macro_f1": 0.9584802193497846,
+    "weighted_precision": 0.97759273098229,
+    "weighted_recall": 0.9770114942528736,
+    "weighted_f1": 0.9771555663609637,
+    "per_class": [
+      {
+        "class_id": 0,
+        "class_name": "class_1_asymptomatic",
+        "support": 155,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      {
+        "class_id": 1,
+        "class_name": "class_2_mild_symptoms",
+        "support": 70,
+        "precision": 0.9705882352941176,
+        "recall": 0.9428571428571428,
+        "f1": 0.9565217391304348
+      },
+      {
+        "class_id": 2,
+        "class_name": "class_3_symptomatic_compromised",
+        "support": 36,
+        "precision": 0.8947368421052632,
+        "recall": 0.9444444444444444,
+        "f1": 0.918918918918919
+      }
+    ],
+    "confusion_matrix": [
+      [
+        155,
+        0,
+        0
+      ],
+      [
+        0,
+        66,
+        4
+      ],
+      [
+        0,
+        2,
+        34
+      ]
+    ],
+    "confusion_matrix_normalized": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.9428571428571428,
+        0.05714285714285714
+      ],
+      [
+        0.0,
+        0.05555555555555555,
+        0.9444444444444444
+      ]
+    ],
+    "class_names": [
+      "class_1_asymptomatic",
+      "class_2_mild_symptoms",
+      "class_3_symptomatic_compromised"
+    ],
+    "precision": "TensorRT FP16-enabled execution",
+    "input_shape": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "batch_size": 1,
+    "historical_reference": {
+      "accuracy": 0.977011,
+      "macro_f1": 0.95848
+    },
+    "historical_match": {
+      "accuracy_difference": 4.942528736284757e-07,
+      "macro_f1_difference": 2.19349784558176e-07
+    }
+  },
+  "performance": {
+    "measured_images": 261,
+    "warmup_count": 10,
+    "mean_engine_latency_ms": 187.14831852821555,
+    "mean_transfer_inclusive_latency_ms": 189.94654054077648,
+    "mean_end_to_end_latency_ms": 273.36316818390804,
+    "engine_fps": 5.343355515370202,
+    "transfer_inclusive_fps": 5.264639182966992,
+    "latency_based_pipeline_fps": 3.658137292757886,
+    "official_measured_wall_time_seconds": 71.45280476100015,
+    "wall_clock_pipeline_fps": 3.652760740085841,
+    "engine_percentiles_ms": {
+      "p50": 186.4278106689453,
+      "p90": 189.09776306152344,
+      "p95": 189.67739868164062,
+      "p99": 190.47097778320312
+    },
+    "end_to_end_percentiles_ms": {
+      "p50": 268.931046,
+      "p90": 312.2317,
+      "p95": 344.37051,
+      "p99": 386.05907659999997
+    },
+    "fps_definitions": {
+      "engine_fps": "1000 / mean TensorRT execution-only CUDA-event latency",
+      "transfer_inclusive_fps": "1000 / mean(H2D + TensorRT + D2H)",
+      "latency_based_pipeline_fps": "1000 / mean complete file-open-to-classification latency",
+      "wall_clock_pipeline_fps": "N / official measured process wall time"
+    }
+  },
+  "power_energy": {
+    "power_boundary": "Jetson module-level Power TOT (POM_5V_IN), not GPU-only power",
+    "monitor": "jtop/jetson-stats 4.3.2",
+    "interval_seconds": 0.5,
+    "active_sample_count": 143,
+    "idle_sample_count": 60,
+    "mean_power_tot_w": 7.59872027972028,
+    "median_power_tot_w": 7.864,
+    "min_power_tot_w": 4.024,
+    "max_power_tot_w": 9.53,
+    "p95_power_tot_w": 9.034,
+    "gross_total_energy_j": 544.7563200023176,
+    "gross_energy_per_image_j": 2.087188965526121,
+    "idle_mean_power_w": 2.881666666666667,
+    "idle_corrected_total_energy_j": 338.8531390442849,
+    "idle_corrected_energy_per_image_j": 1.2982878890585627,
+    "images_per_gross_joule": 0.47911330335532337,
+    "images_per_idle_corrected_joule": 0.770245188626952,
+    "integration": "trapezoidal integration over timestamped samples with boundary extension",
+    "warmup_energy_excluded": true
+  },
+  "resources": {
+    "avg_cpu_util_percent": 38.55769230769231,
+    "max_cpu_util_percent": 83.25,
+    "avg_gpu_util_percent": 70.07412587412587,
+    "max_gpu_util_percent": 99.7,
+    "avg_ram_used_mb": 2310.5567362325173,
+    "max_ram_used_mb": 2388.046875,
+    "avg_process_rss_mb": 1013.3645924388112,
+    "max_process_rss_mb": 1032.51171875
+  },
+  "temperature": {
+    "avg_max_sensor_temperature_c": 56.74125874125874,
+    "max_sensor_temperature_c": 59.5
+  },
+  "bottleneck": {
+    "main_bottleneck": {
+      "stage": "TensorRT FP16 inference",
+      "mean_latency_ms": 187.14831852821555,
+      "median_latency_ms": 186.4278106689453,
+      "p95_ms": 189.67739868164062,
+      "p99_ms": 190.47097778320312,
+      "accumulated_latency_ms": 48845.71113586426,
+      "share_of_end_to_end_percent": 68.4614243284997,
+      "bottleneck_rank": 1
+    },
+    "latency_outside_tensorrt_percent": 31.538575671500297,
+    "decoding_percent": 9.268023337064042,
+    "preprocessing_percent": 20.656956062958525,
+    "tensorrt_fp16_inference_percent": 68.4614243284997,
+    "transfers_percent": 1.0236280297565212,
+    "postprocessing_percent": 0.1685444920320882,
+    "optimization_priority": "TensorRT FP16 inference"
+  },
+  "comparison": {
+    "status": "PASS",
+    "fp32_reference": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp32_640x640_batch1_warmup10_20260716_182655",
+    "fp16_run": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533",
+    "prediction_agreement_rate": 1,
+    "accuracy_fp32": 0.9770114942528736,
+    "accuracy_fp16": 0.9770114942528736,
+    "accuracy_change": 0.0,
+    "macro_f1_fp32": 0.9584802193497846,
+    "macro_f1_fp16": 0.9584802193497846,
+    "macro_f1_change": 0.0,
+    "engine_mean_latency_ms_fp32": 348.0575734573306,
+    "engine_mean_latency_ms_fp16": 187.14831852821555,
+    "fp16_engine_speedup": 1.8597953547995967,
+    "engine_fps_fp32": 2.87308789194496,
+    "engine_fps_fp16": 5.343355515370202,
+    "engine_fps_change_percent": 85.97953547995967,
+    "end_to_end_mean_latency_ms_fp32": 436.3825404597701,
+    "end_to_end_mean_latency_ms_fp16": 273.36316818390804,
+    "fp16_pipeline_speedup": 1.596347245164312,
+    "pipeline_fps_fp32": 2.2915673916431345,
+    "pipeline_fps_fp16": 3.658137292757886,
+    "pipeline_fps_change_percent": 59.63472451643121,
+    "wall_clock_fps_fp32": 2.2893062812792393,
+    "wall_clock_fps_fp16": 3.652760740085841,
+    "average_power_w_fp32": 8.56817543859649,
+    "average_power_w_fp16": 7.59872027972028,
+    "maximum_power_w_fp32": 10.964,
+    "maximum_power_w_fp16": 9.53,
+    "gross_energy_per_image_j_fp32": 3.7512007954175437,
+    "gross_energy_per_image_j_fp16": 2.087188965526121,
+    "gross_energy_change_percent": -44.35944436576615,
+    "idle_corrected_energy_per_image_j_fp32": 2.5127760953983587,
+    "idle_corrected_energy_per_image_j_fp16": 1.2982878890585627,
+    "idle_corrected_energy_change_percent": -48.33252785888427,
+    "max_temperature_c_fp32": 62.0,
+    "max_temperature_c_fp16": 59.5,
+    "max_ram_mb_fp32": 2553.8671875,
+    "max_ram_mb_fp16": 2388.046875,
+    "fp32_main_bottleneck": {
+      "stage": "TensorRT inference",
+      "mean_latency_ms": 348.0575734573306,
+      "median_latency_ms": 346.8955078125,
+      "p95_ms": 360.7231140136719,
+      "p99_ms": 377.0054260253906,
+      "accumulated_latency_ms": 90843.02667236328,
+      "share_of_end_to_end_percent": 79.75973857492538,
+      "bottleneck_rank": 1
+    },
+    "fp16_main_bottleneck": {
+      "stage": "TensorRT FP16 inference",
+      "mean_latency_ms": 187.14831852821555,
+      "median_latency_ms": 186.4278106689453,
+      "p95_ms": 189.67739868164062,
+      "p99_ms": 190.47097778320312,
+      "accumulated_latency_ms": 48845.71113586426,
+      "share_of_end_to_end_percent": 68.4614243284997,
+      "bottleneck_rank": 1
+    },
+    "fp16_outside_tensorrt_percent": 31.538575671500297,
+    "protocol_parity_status": "PASS"
+  },
+  "model_artifact": {
+    "path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/model/resnet50_inference_only.pt",
+    "size_bytes": 94375903,
+    "modified_time": 1781289670.3360872,
+    "sha256": "ade1ca2964c273bce81b6a82a8446b81b9be8954f2bd6a54d563c57c11bbc61a"
+  },
+  "onnx": {
+    "path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/onnx/resnet50_classification_fp32_1x3x640x640.onnx",
+    "size_bytes": 93974933,
+    "modified_time": 1784219809.4225135,
+    "sha256": "ff500e0a569014bb24e9661e0fc38abbfc20a3da0e9320138cc1050c6c863f82"
+  },
+  "engine": {
+    "path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/engine/resnet50_classification_tensorrt_fp16_1x3x640x640.engine",
+    "size_bytes": 78958604,
+    "modified_time": 1784226297.6797035,
+    "sha256": "b75ed4922bbac90b7c430d2ffdc8447c1102884eb0de5cc81e6930aa29d55a2a"
+  }
+}

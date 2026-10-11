@@ -1,0 +1,21 @@
+{
+  "selected_mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "selected_std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "source_file": "/home/jetson/Downloads/classification_jetson/preprocessing.json",
+  "source_sha256": "e18a89771dcb3ff80d87ee0451376fc4665ee52d7b1710feda0bc330bcd7e369",
+  "exact_lines": "4-5",
+  "historical_code_evidence": {
+    "path": "/home/jetson/Downloads/classification_jetson/resnet50_fp32_core4_benchmark/scripts/run_resnet50_fp32_core4_benchmark.py",
+    "lines": "189-198 and 601-608"
+  },
+  "evidence_strength": "HIGH",
+  "conflicting_values": []
+}

@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "fp16_preprocessing": {
+    "img_size": 640,
+    "resize": [
+      640,
+      640
+    ],
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "input_shape": [
+      1,
+      3,
+      640,
+      640
+    ]
+  },
+  "fp32_preprocessing": {
+    "img_size": 640,
+    "resize": [
+      640,
+      640
+    ],
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "input_shape": [
+      1,
+      3,
+      640,
+      640
+    ]
+  },
+  "fp16_sha256": "e18a89771dcb3ff80d87ee0451376fc4665ee52d7b1710feda0bc330bcd7e369",
+  "fp32_sha256": "e18a89771dcb3ff80d87ee0451376fc4665ee52d7b1710feda0bc330bcd7e369",
+  "exact_match": true
+}

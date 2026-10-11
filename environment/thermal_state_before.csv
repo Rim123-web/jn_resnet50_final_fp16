@@ -1,0 +1,7 @@
+zone,sensor,temperature_millicelsius,temperature_c
+/sys/class/thermal/thermal_zone0,AO-therm,47500,47.5
+/sys/class/thermal/thermal_zone1,CPU-therm,40000,40.0
+/sys/class/thermal/thermal_zone2,GPU-therm,37500,37.5
+/sys/class/thermal/thermal_zone3,PLL-therm,37000,37.0
+/sys/class/thermal/thermal_zone4,PMIC-Die,50000,50.0
+/sys/class/thermal/thermal_zone5,thermal-fan-est,38750,38.75

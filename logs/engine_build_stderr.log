@@ -1,0 +1,1 @@
+[W] Could not read timing cache from: /home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/engine/timing_cache.bin. A new timing cache will be generated and written.

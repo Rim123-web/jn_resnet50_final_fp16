@@ -1,0 +1,1 @@
+ade1ca2964c273bce81b6a82a8446b81b9be8954f2bd6a54d563c57c11bbc61a  resnet50_inference_only.pt

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": {
+    "fp32_reference_validation_pass": true,
+    "source_model_sha256": true,
+    "onnx_sha256": true,
+    "dataset": true,
+    "preprocessing": true,
+    "class_mapping": true,
+    "input_shape": true,
+    "batch_size": true,
+    "warmup_count": true,
+    "monitor_interval_seconds": true
+  },
+  "experimental_variable": "TensorRT execution precision only: FP32 reference versus FP16-enabled execution"
+}

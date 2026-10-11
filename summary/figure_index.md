@@ -1,0 +1,24 @@
+# Figure Index
+
+- `confusion_matrix_absolute.png`
+- `confusion_matrix_normalized.png`
+- `cpu_utilization_trace.png`
+- `end_to_end_latency_distribution.png`
+- `end_to_end_latency_trace.png`
+- `engine_latency_distribution.png`
+- `engine_latency_trace.png`
+- `fp32_vs_fp16_energy_per_image.png`
+- `fp32_vs_fp16_engine_fps.png`
+- `fp32_vs_fp16_engine_latency.png`
+- `fp32_vs_fp16_pipeline_fps.png`
+- `fp32_vs_fp16_quality.png`
+- `fp32_vs_fp16_stage_breakdown.png`
+- `gpu_utilization_trace.png`
+- `latency_vs_power_tot.png`
+- `mean_stage_latency.png`
+- `mean_stage_share.png`
+- `per_class_metrics.png`
+- `power_tot_trace.png`
+- `ram_usage_trace.png`
+- `stacked_pipeline_breakdown.png`
+- `temperature_trace.png`

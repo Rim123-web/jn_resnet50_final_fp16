@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checks": {
+    "image_count": true,
+    "image_order_sha256": true,
+    "dataset_inventory_sha256": true,
+    "class_mapping": true
+  },
+  "fp16_dataset_root": "/home/jetson/Downloads/classification_jetson/test_imgs",
+  "fp32_dataset_root": "/home/jetson/Downloads/classification_jetson/test_imgs",
+  "fp16_image_count": 261,
+  "fp32_image_count": 261,
+  "fp16_image_order_sha256": "1204aa9e54ace76ca7a66eb05c1f790c02afaf0d92865663c08fdf34267e9e5f",
+  "fp32_image_order_sha256": "1204aa9e54ace76ca7a66eb05c1f790c02afaf0d92865663c08fdf34267e9e5f"
+}

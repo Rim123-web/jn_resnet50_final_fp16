@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": {
+    "source_model_unchanged": true,
+    "source_onnx_unchanged": true,
+    "all_test_images_unchanged": true,
+    "test_image_count_unchanged": true,
+    "fp32_reference_validation_still_pass": true
+  },
+  "audited_at": "2026-07-16T20:47:14+0200",
+  "dataset_root": "/home/jetson/Downloads/classification_jetson/test_imgs",
+  "image_count": 261
+}

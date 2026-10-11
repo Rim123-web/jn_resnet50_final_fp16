@@ -1,0 +1,11 @@
+Architecture: ResNet50
+Classes: 3
+Class names: ['class_1_asymptomatic', 'class_2_mild_symptoms', 'class_3_symptomatic_compromised']
+Parameters: 23514179
+Source: /home/jetson/Downloads/classification_jetson/resnet50_inference_models/resnet50_inference_only.pt
+Source SHA-256: ade1ca2964c273bce81b6a82a8446b81b9be8954f2bd6a54d563c57c11bbc61a
+Packaged copy: /home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/model/resnet50_inference_only.pt
+Model load: PASS
+FP32 source parameters: VERIFIED
+Source model hash matches FP32 package: True
+ONNX hash matches FP32 package: True

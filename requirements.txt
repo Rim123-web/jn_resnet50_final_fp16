@@ -1,0 +1,8 @@
+torch==1.13.0a0+git7c98e70
+torchvision==0.14.0a0+5ce4506
+numpy==1.23.5
+Pillow==9.2.0
+matplotlib==3.7.5
+psutil==7.2.2
+jetson-stats==4.3.2
+TensorRT==8.0.1.6 (Jetson system/user-site package; do not pip install)

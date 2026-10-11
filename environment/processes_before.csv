@@ -1,0 +1,4 @@
+pid,ppid,elapsed_s,cpu,memory,command
+68851,68847,0,0.0,0.0,"bash -c set -euo pipefail RUN=/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533 PY=/home/jetson/Downloads/jetson_nano/.venv_yolo/bin/python PYTHONNOUSERSITE=1 ""$PY"" -m py_compile ""$RUN""/scripts/*.py 2>&1 | tee ""$RUN/logs/pre_execution_syntax_check.log"" PYTHONNOUSERSITE=1 ""$PY"" ""$RUN/scripts/prepare_project.py"" 2>&1 | tee ""$RUN/logs/preparation.log"""
+68859,68851,0,0.0,0.7,/home/jetson/Downloads/jetson_nano/.venv_yolo/bin/python /home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/scripts/prepare_project.py
+68860,68851,0,0.0,0.0,tee /home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/logs/preparation.log

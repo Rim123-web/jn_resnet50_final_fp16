@@ -1,0 +1,7 @@
+{
+  "selected_model": "/home/jetson/Downloads/classification_jetson/resnet50_inference_models/resnet50_inference_only.pt",
+  "selection_reason": "Exact inference-only FP32 checkpoint referenced by the executed historical ResNet50 Core4 benchmark; duplicate deployment copy has identical SHA-256.",
+  "historical_script": "/home/jetson/Downloads/classification_jetson/resnet50_fp32_core4_benchmark/scripts/run_resnet50_fp32_core4_benchmark.py",
+  "historical_script_sha256": "7e1cf5eebffcecb4066b2a55c954874efcce947c74529576e7a9d2c681c987e0",
+  "highest_confidence": true
+}

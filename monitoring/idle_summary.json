@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "duration_seconds": 30.0,
+  "sample_count": 60,
+  "mean_power_tot_w": 2.881666666666667,
+  "median_power_tot_w": 2.821,
+  "min_power_tot_w": 2.778,
+  "max_power_tot_w": 3.94,
+  "power_boundary": "Jetson module-level Power TOT (POM_5V_IN)"
+}

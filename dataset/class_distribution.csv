@@ -1,0 +1,4 @@
+class_id,class_name,image_count
+0,class_1_asymptomatic,155
+1,class_2_mild_symptoms,70
+2,class_3_symptomatic_compromised,36

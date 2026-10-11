@@ -1,0 +1,8 @@
+  File: /home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/engine/resnet50_classification_tensorrt_fp16_1x3x640x640.engine
+  Size: 78958604  	Blocks: 154224     IO Block: 4096   regular file
+Device: b301h/45825d	Inode: 2494804     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/  jetson)   Gid: ( 1000/  jetson)
+Access: 2026-07-16 20:24:58.943725111 +0200
+Modify: 2026-07-16 20:24:57.679703441 +0200
+Change: 2026-07-16 20:24:57.679703441 +0200
+ Birth: -

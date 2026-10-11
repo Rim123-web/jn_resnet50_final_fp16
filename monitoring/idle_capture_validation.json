@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "duration_seconds": 30.0,
+  "samples": 60,
+  "csv_exists": true,
+  "csv_parseable": true,
+  "power_samples_present": true
+}

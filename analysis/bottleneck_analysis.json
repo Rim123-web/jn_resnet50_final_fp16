@@ -1,0 +1,19 @@
+{
+  "main_bottleneck": {
+    "stage": "TensorRT FP16 inference",
+    "mean_latency_ms": 187.14831852821555,
+    "median_latency_ms": 186.4278106689453,
+    "p95_ms": 189.67739868164062,
+    "p99_ms": 190.47097778320312,
+    "accumulated_latency_ms": 48845.71113586426,
+    "share_of_end_to_end_percent": 68.4614243284997,
+    "bottleneck_rank": 1
+  },
+  "latency_outside_tensorrt_percent": 31.538575671500297,
+  "decoding_percent": 9.268023337064042,
+  "preprocessing_percent": 20.656956062958525,
+  "tensorrt_fp16_inference_percent": 68.4614243284997,
+  "transfers_percent": 1.0236280297565212,
+  "postprocessing_percent": 0.1685444920320882,
+  "optimization_priority": "TensorRT FP16 inference"
+}

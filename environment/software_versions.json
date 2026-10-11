@@ -1,0 +1,38 @@
+{
+  "torch": {
+    "version": "1.13.0a0+git7c98e70",
+    "path": "/usr/local/lib/python3.8/dist-packages/torch/__init__.py"
+  },
+  "torchvision": {
+    "version": "0.14.0a0+5ce4506",
+    "path": "/usr/local/lib/python3.8/dist-packages/torchvision/__init__.py"
+  },
+  "numpy": {
+    "version": "1.23.5",
+    "path": "/home/jetson/Downloads/jetson_nano/.venv_yolo/lib/python3.8/site-packages/numpy/__init__.py"
+  },
+  "PIL": {
+    "version": "9.2.0",
+    "path": "/usr/local/lib/python3.8/dist-packages/PIL/__init__.py"
+  },
+  "cv2": {
+    "version": "4.13.0",
+    "path": "/home/jetson/Downloads/jetson_nano/.venv_yolo/lib/python3.8/site-packages/cv2/__init__.py"
+  },
+  "jtop": {
+    "version": "4.3.2",
+    "path": "/usr/local/lib/python3.8/dist-packages/jtop/__init__.py"
+  },
+  "psutil": {
+    "version": "7.2.2",
+    "path": "/home/jetson/Downloads/jetson_nano/.venv_yolo/lib/python3.8/site-packages/psutil/__init__.py"
+  },
+  "matplotlib": {
+    "version": "3.7.5",
+    "path": "/home/jetson/Downloads/jetson_nano/.venv_yolo/lib/python3.8/site-packages/matplotlib/__init__.py"
+  },
+  "tensorrt_python": {
+    "version": "8.0.1.6",
+    "path": "/home/jetson/.local/lib/python3.8/site-packages/tensorrt/__init__.py"
+  }
+}

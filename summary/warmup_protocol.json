@@ -1,0 +1,8 @@
+{
+  "warmup_count": 10,
+  "warmup_image_policy": "first deterministic image preprocessed once, then engine executed exactly 10 times",
+  "excluded_from_official_timing": true,
+  "excluded_from_monitoring": true,
+  "measured_images": 261,
+  "total_official_process_engine_executions": 271
+}

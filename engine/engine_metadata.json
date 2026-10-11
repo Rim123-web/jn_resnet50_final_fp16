@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "engine_path": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/engine/resnet50_classification_tensorrt_fp16_1x3x640x640.engine",
+  "engine_sha256": "b75ed4922bbac90b7c430d2ffdc8447c1102884eb0de5cc81e6930aa29d55a2a",
+  "engine_size_bytes": 78958604,
+  "bindings": [
+    {
+      "index": 0,
+      "name": "input",
+      "is_input": true,
+      "engine_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "runtime_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "dtype": "DataType.FLOAT"
+    },
+    {
+      "index": 1,
+      "name": "logits",
+      "is_input": false,
+      "engine_shape": [
+        1,
+        3
+      ],
+      "runtime_shape": [
+        1,
+        3
+      ],
+      "dtype": "DataType.FLOAT"
+    }
+  ],
+  "input_shape_verified": true,
+  "batch_size": 1,
+  "builder_fp16_enabled": true,
+  "int8_enabled": false,
+  "calibration_used": false,
+  "tf32_enabled": false,
+  "input_binding_dtype": "DataType.FLOAT",
+  "output_binding_dtypes": [
+    "DataType.FLOAT"
+  ],
+  "internal_execution_precision": "TensorRT FP16-enabled execution",
+  "all_layers_proven_fp16": false,
+  "fp32_fallback_layer_information": "The verbose builder log shows Half tensors through the ResNet blocks and FP32 input/output reformats. A complete API-level proof that every internal layer is FP16 is unavailable in TensorRT 8.0.1.",
+  "layer_precision_report_nonempty": true,
+  "verification_basis": "fresh --fp16 build, verbose builder log, runtime binding inspection",
+  "cudart": "libcudart.so.10.2"
+}

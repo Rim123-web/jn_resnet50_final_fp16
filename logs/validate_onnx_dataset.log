@@ -1,0 +1,3 @@
+/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533/scripts/validate_onnx_dataset.py:23: DeprecationWarning: BILINEAR is deprecated and will be removed in Pillow 10 (2023-07-01). Use Resampling.BILINEAR instead.
+  image = Image.open(path).convert("RGB").resize((640, 640), Image.BILINEAR)
+ONNX DATASET VALIDATION PASS: 20 images
